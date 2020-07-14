@@ -1,10 +1,13 @@
-import { Quantum, define } from '../../references/quantum.js';
-import { form } from '../templates/form.js';
+import { Component } from '../../references/quantum.js';
 
-export class Form extends Quantum {
+export class Form extends Component {
     constructor() {
-        super(form);
+        super();
     }
+
+    static template = document.querySelector('#quantum-form');
+
+    static attributes = [];
 }
 
-define(Form);
+customElements.define('quantum-form', Form);
