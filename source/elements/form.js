@@ -1,23 +1,20 @@
-import { Component, template, getAttribute } from '../../references/quantum.js';
 import html from '../templates/form.js';
 
-export class Form extends Component {
+export class Form extends quantum.Component {
     #form;
 
     constructor() {
         super();
 
         this.#form = this.shadowRoot.querySelector('form');
-        this.#form.method = getAttribute(this, 'method');
+        this.#form.method = quantum.getAttribute(this, 'method');
     }
 
-    static template = template(html);
-
-    static attributes = [];
+    static template = quantum.template(html);
 
     submit() {
         this.#form.submit();
     }
 }
 
-customElements.define('quantum-form', Form);
+quantum.define('quantum-form', Form);
