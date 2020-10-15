@@ -4,8 +4,8 @@
     "version": "0.5.0",
     "license": "MIT",
     "dependencies": {
-        "@javascribble/quantum": "^0.4.9",
-        "@javascribble/quantum-check": "^0.4.1"
+        "@javascribble/quantum": "*",
+        "@javascribble/quantum-check": "*"
     },
     "devDependencies": {
         "live-server": "*"
