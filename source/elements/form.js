@@ -1,6 +1,7 @@
+import { Component, template, define } from '../import.js';
 import html from '../templates/form.js';
 
-export class Form extends quantum.Component {
+export class Form extends Component {
     #form;
 
     constructor() {
@@ -10,11 +11,11 @@ export class Form extends quantum.Component {
         this.#form.method = quantum.getAttribute(this, 'method');
     }
 
-    static template = quantum.template(html);
+    static template = template(html);
 
     submit() {
         this.#form.submit();
     }
 }
 
-quantum.define('quantum-form', Form);
+define('quantum-form', Form);
