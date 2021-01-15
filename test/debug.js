@@ -1,6 +1,6 @@
-import '/node_modules/@javascribble/quantum/source/export.js';
-import '/node_modules/@javascribble/quantum-check/source/export.js';
-import '/source/export.js';
+import '/node_modules/@javascribble/quantum/source/main.js';
+import '/node_modules/@javascribble/quantum-check/source/main.js';
+import '/source/main.js';
 
 document.body.style.visibility = 'visible';
 
