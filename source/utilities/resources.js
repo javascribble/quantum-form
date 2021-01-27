@@ -1,0 +1,1 @@
+export const loadFormData = (url, options) => fetch(url, options).then(response => response.formData());
