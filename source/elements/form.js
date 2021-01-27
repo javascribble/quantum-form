@@ -1,5 +1,7 @@
 import html from '../templates/form.js';
 
+const { Component, template, define } = quantum;
+
 export class Form extends Component {
     #form;
 
