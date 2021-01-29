@@ -1,3 +1,3 @@
-import * as form from './elements/form.js';
+import { Form } from './elements/form.js';
 
-Object.assign(quantum, form);
+Quantum.Form = Form;
