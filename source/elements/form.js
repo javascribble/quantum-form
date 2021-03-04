@@ -1,5 +1,3 @@
-import html from '../templates/form.js';
-
 export class Form extends Quantum {
     #form = this.shadowRoot.querySelector('form');
 
@@ -11,5 +9,3 @@ export class Form extends Quantum {
         this.#form.submit();
     }
 }
-
-Form.define('quantum-form', html);
