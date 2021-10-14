@@ -1,9 +1,6 @@
 import '/node_modules/@javascribble/quantum/bundles/main-window.js';
 import '/bundles/main.js';
 
-document.body.style.visibility = 'visible';
+document.querySelector('quantum-form').addEventListener('submit', console.log);
 
-const form = document.querySelector('quantum-form');
-form.addEventListener('submit', event => {
-    console.log(event.timestamp);
-});
+document.body.style.visibility = 'visible';

@@ -5,6 +5,14 @@ export class Form extends Quantum {
 
     constructor() {
         super();
+
+        this.#form.addEventListener('submit', console.log);
+    }
+
+    static get observedAttributes() { return ['action', 'target', 'method', 'autocomplete', 'novalidate']; }
+
+    attributeChangedCallback(attribute, previousValue, currentValue) {
+        this.#form.setAttribute(attribute, currentValue);
     }
 
     submit() {

@@ -2,3 +2,26 @@ body {
     visibility: hidden;
     margin: 0;
 }
+
+quantum-form {
+    --letter-spacing: 0.1em;
+    --border-size: 1px;
+    --border-radius-size: 5px;
+    --space-small: 0.5em;
+    --space-medium: 1em;
+    --space-large: 2em;
+    --primary-color: rgb(50, 50, 50);
+    --primary-hover-color: rgb(230, 155, 195);
+    --primary-active-color: rgba(230, 155, 195, 0.75);
+    --primary-background-color: rgb(255, 255, 255);
+    --primary-accent-color: rgba(205, 190, 255, 0.5);
+    --secondary-color: rgb(50, 50, 50);
+    --secondary-hover-color: rgb(205, 190, 255);
+    --secondary-active-color: rgba(205, 190, 255, 0.75);
+    --secondary-background-color: transparent;
+    --secondary-accent-color: rgb(250, 250, 255);
+    --border-color: rgba(50, 50, 50, 0.5);
+    --focus-color: rgb(205, 190, 255);
+    --invalid-color: rgb(230, 0, 0);
+    --success-color: rgb(0, 230, 0);
+}
